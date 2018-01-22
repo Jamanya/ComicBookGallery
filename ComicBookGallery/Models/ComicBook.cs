@@ -17,7 +17,7 @@ namespace ComicBookGallery.Models
         public string DisplayText { get { return SeriesTitle + " #" + IssueNumber; } }
 
         //prop for display images series-title-issue-number.jpg
-        public string CoverFileImage
+        public string CoverImageFileName
         {
             get
             {

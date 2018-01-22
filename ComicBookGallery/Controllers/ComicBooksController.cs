@@ -14,9 +14,9 @@ namespace ComicBookGallery.Controllers {
         public ActionResult Detail() {
             var comicBook = new ComicBook() {
 
-                SeriesTitle = "Hogans Hero's",
-                IssueNumber = 1,
-                DescriptionHtml = "<p>The first issue ever </p>",
+                SeriesTitle = "The Amazing Spider man",
+                IssueNumber = 700,
+                DescriptionHtml = "<p>Final issue! Witness the final hours of Doctor Octopus' life and his one, last, great act of revenge! Even if Spider-Man survives...<strong>will Peter Parker?</strong><p>",
                 Artists = new Artists[]
                 {
                     new Artists() { Name= "Dan Slott", Role= "Script"},
