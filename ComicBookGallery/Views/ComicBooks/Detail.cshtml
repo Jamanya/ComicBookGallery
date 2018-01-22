@@ -1,0 +1,60 @@
+﻿
+@{
+    Layout = null;
+
+    var seriesTitle = "Hogans Hero's";
+    var issueNumber = 1;
+    var description = "<p>The first issue ever</p>";
+    var artists = new string[]
+    {
+         "Script: Dan Slott",
+        "Pencils: Humberto Ramos",
+        "Inks: Victor Olazaba",
+        "Colors: Edgar Delgado",
+        "Letters: Chris Eliopoulos"
+    };
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ComicBook Details</title>
+</head>
+<body>
+    <div>
+        <h1>@seriesTitle</h1>
+    </div>
+
+    <div>
+        <h3>Issue #@issueNumber</h3>
+    </div>
+
+    <div>
+        <h4>Description:</h4>
+        <h5>@Html.Raw(description)</h5>
+    </div>
+
+    @if (artists.Length > 0)
+    {
+        <div>
+            <h5>Artists:</h5>
+            <div>
+                <ul>
+                    @foreach (var artist in artists)
+                    {
+                        <li>
+                            @artist
+                        </li>
+
+                    }
+                </ul>
+            </div>
+        </div>
+
+    }
+
+
+</body>
+</html>
